@@ -5,7 +5,7 @@ UnionFind::UnionFind(int numElements)
     progeny = new int[numElements]; //make arrays the size of numElements
     roots = new int[numElements];
     for(int i = 0; i<numElements; i++){
-        progeny[i] = 1; //set progeny to 1 since nothing the only thing that points to it is itself
+        progeny[i] = 0; //set progeny to 0 since the only thing that points to it is itself
         roots[i] = i; //initialize roots to -1 since there are no connections yet and technically everything is a root
     }
 }
@@ -25,11 +25,11 @@ void UnionFind::Union(int index1, int index2){
         return;
     else if(progeny[index1] > progeny[index2]){ // if index1 has more things underneath it OR if index2 has not connected to anything, then set index2's root to index1's root
         roots[index2] = index1;
-        progeny[index1] = progeny[index1] + progeny[index2]; // increase the progeny of index1 by the number of progeny at index2
+        progeny[index1] = progeny[index1] + progeny[index2] + 1; // increase the progeny of index1 by the number of progeny at index2
     }
-    else{ //this else occurs when index2 has more progeny than index 1 OR any other case (which there shouldn't be)
+    else{ //this else occurs when index2 has more than or equal to progeny than index 1 OR any other case (which there shouldn't be)
         roots[index1] = index2; // attach index1's root to index2's root
-        progeny[index2] = progeny[index2] + progeny[index1]; // increase the progeny of index1 by the number of progeny at index2
+        progeny[index2] = progeny[index2] + progeny[index1] + 1; // increase the progeny of index2 by the number of progeny at index1
     }
 }
 
