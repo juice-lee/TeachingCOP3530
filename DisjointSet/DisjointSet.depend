@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1421814061 source:d:\users\kj\documents\teaching\disjointset\main.cpp
+	<iostream>
+	"UnionFind.h"
+	<stdio.h>
+
+1421813645 d:\users\kj\documents\teaching\disjointset\include\unionfind.h
+
+1421814416 source:d:\users\kj\documents\teaching\disjointset\src\unionfind.cpp
+	"UnionFind.h"
+
