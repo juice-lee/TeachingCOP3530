@@ -34,7 +34,7 @@ void UnionFind::Union(int index1, int index2){
 }
 
 bool UnionFind::IsConnected(int index1, int index2){
-    if(FindRoot(index1)==FindRoot(index2) ) // if both index1 and 2 have the same root and are not -1, then return true
+    if(FindRoot(index1)==FindRoot(index2) ) // if both index1 and 2 have the same root, then return true
         return true;
     return false; // if the roots are different or not set, return false
 
