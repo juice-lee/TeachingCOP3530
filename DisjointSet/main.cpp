@@ -22,7 +22,7 @@ int main(void)
     int numElements, operation, element1, element2; // variables
     const char* INPUTFILE = "uf-medium.in";
 
-    freopen("uf-medium.in", "r", stdin); // opening the file "uf-medium.in" in read mode with stdin as the stream
+    freopen(INPUTFILE, "r", stdin); // opening the file "uf-medium.in" in read mode with stdin as the stream
     scanf("%d", &numElements); // reads the first number in the file and stores it in numElements
 
     UnionFind *disjointSets = new UnionFind(numElements); // instantiate UnionFind and pass in the number of elements to the constructor

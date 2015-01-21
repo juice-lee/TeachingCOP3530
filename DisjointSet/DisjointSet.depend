@@ -9,3 +9,13 @@
 1421814416 source:d:\users\kj\documents\teaching\disjointset\src\unionfind.cpp
 	"UnionFind.h"
 
+1421814416 source:d:\users\kj\documents\teachingcop3530\disjointset\src\unionfind.cpp
+	"UnionFind.h"
+
+1421813645 d:\users\kj\documents\teachingcop3530\disjointset\include\unionfind.h
+
+1421816555 source:d:\users\kj\documents\teachingcop3530\disjointset\main.cpp
+	<iostream>
+	"UnionFind.h"
+	<stdio.h>
+
