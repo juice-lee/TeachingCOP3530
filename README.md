@@ -12,8 +12,10 @@ This is just example code used to teach. There may be better solutions with bett
 Union Find: (1/21/2015)
 
 Look in the folder DisjointSet. This has all the code available for you.
---
+~~~~~~
 
+~~~~~~
 Double Ended Queue: (2/11/201)
+
 Look in the folder double ended queue 1. This is for sDeque hardcoded for strings (not a template)
 ~~~~~~
